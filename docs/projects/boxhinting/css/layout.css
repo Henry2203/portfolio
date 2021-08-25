@@ -1,0 +1,29 @@
+p{
+    font-size: 16px;
+}
+/*Laatikoitten alku*/
+#container1 li:nth-child(odd) { 
+    background: #E0EAC5;
+    border-radius:0 0 15px;
+}
+#container2 li:nth-child(even) {
+    background: #E0EAC5;
+    border-radius:0 0 15px;
+}
+/*Laatikoitten lopppu*/
+#container1 {
+    width: 35%;
+}
+#container2 {
+    width: 65%;
+}
+#content {
+    display: flex;
+    flex-direction: row;
+  }
+ol{
+    margin: 5px 10px 5px 5px;
+}
+li {
+    padding: 15px;
+}

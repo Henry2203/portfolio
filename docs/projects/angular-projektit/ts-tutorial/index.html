@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: black;
+            color: white;
+        }
+        
+        form {
+            background-color: white;
+            color: black;
+            padding: 10px;
+            margin-top: 10px;
+        }
+        
+        footer {
+            text-align: center;
+            margin: 5px;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>TypeScript -> JavaScript esimerkkejä</h1>
+    <form>
+        <h2>section 2</h2>
+        <h4>.ts</h4>
+        <p>
+            //console.log("hello world"); <br> function hello(string: String) { <br> console.log("Hello " + string); <br> } <br> hello("Robb");
+        </p>
+        <h4>.js</h4>
+        <p>
+            //console.log("hello world"); <br> function hello(string) { <br> console.log("Hello " + string); <br> } <br> hello("Robb");
+        </p>
+    </form>
+    <form>
+        <h2>section 3</h2>
+        <h4>types-3.ts</h4>
+        <p>
+            class Stark {<br> name: string = "Brandon";<br> static castle: string = "Winterfell!";<br> saying: string;<br> constructor() { <br>this.saying = Stark.castle; <br>}<br> hello(person: string) {<br> console.log("Hello," + person);<br> }<br>            } <br> var ned = new Stark();<br> ned.saying = "Winter is coming!";<br> //console.log(Stark.castle); <br>ned.hello("Robert");
+        </p>
+        <h4>types-3.js</h4>
+        <p>
+            var Stark = /** @class */ (function () {<br> function Stark() {<br> this.name = "Brandon"; <br>this.saying = Stark.castle; <br>} <br>Stark.prototype.hello = function (person) {<br> console.log("Hello," + person);<br> }; <br>Stark.castle =
+            "Winterfell!";
+            <br> return Stark; <br>}()); <br>var ned = new Stark();<br> ned.saying = "Winter is coming!";<br> //console.log(Stark.castle); <br>ned.hello("Robert");
+
+        </p>
+    </form>
+    <form>
+        <h2>section 4</h2>
+        <h4>main.ts</h4>
+        <p>
+            ///
+            <reference path="helper.ts" /><br> console.log(Helper.Language.Greeting + " World!");
+        </p>
+        <h4>helper.ts</h4>
+        <p>
+            module Helper {<br> export class Language {<br> static Greeting: string = "Bonjour";<br> }
+            <br> }
+        </p>
+        <h4>gruntfile.js</h4>
+        <p>
+            module.exports = function(grunt) {<br> grunt.loadNpmTasks('grunt-ts');
+            <br> grunt.initConfig({
+
+            <br> ts: {<br> main: {<br> src: ['typescript/*.ts'],<br> out: 'javascript/main.js'<br> }
+            <br> }
+            <br> });
+            <br> grunt.registerTask('default', ['ts'])<br> }
+
+        </p>
+    </form>
+    <footer> © Henry Müil 2021</footer>
+</body>
+
+</html>

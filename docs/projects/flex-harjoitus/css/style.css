@@ -1,0 +1,138 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: darkcyan;
+    padding: 10px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.wrapper>* {
+    padding: 10px;
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+
+.header {
+    background-color: gold;
+}
+
+
+/*Nav-bar*/
+
+.navbar {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    text-decoration: none;
+    background-color: lightgrey;
+    border: 1px solid rgb(121, 121, 121);
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/*Nav-bar END*/
+
+.main {
+    background-color: darkorange;
+    padding: 0 !important;
+}
+
+.main p {
+    padding: 10px;
+}
+
+
+/*Some-nappulat*/
+
+#some {
+    display: flex;
+    flex-direction: row;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+#some a {
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    color: white;
+}
+
+.facebook {
+    background-color: #3C5A9A;
+}
+
+.twitter {
+    background-color: #55ACEF;
+}
+
+.mail {
+    background-color: #868686;
+}
+
+
+/*Some-nappulat END*/
+
+.aside-1 {
+    background-color: mediumseagreen;
+}
+
+.aside-2 {
+    background-color: seagreen;
+}
+
+.footer {
+    background-color: lightgreen;
+}
+
+@media screen and (min-width:769px) {
+    .wrapper {
+        flex-direction: row;
+    }
+    .aside-1 {
+        order: 1;
+        flex-basis: 0px;
+    }
+    .main {
+        order: 2;
+        flex-basis: 400px;
+    }
+    .aside-2 {
+        order: 3;
+        flex-basis: 0px;
+    }
+    #some {
+        order: 4;
+    }
+    .footer {
+        order: 5;
+    }
+}
+
+@media screen and (min-width:426px) {
+    .wrapper {
+        flex-direction: row;
+    }
+    .aside-1 {
+        flex-basis: 0px;
+    }
+    .aside-2 {
+        flex-basis: 0px;
+    }
+}

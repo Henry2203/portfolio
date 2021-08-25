@@ -1,0 +1,16 @@
+body {
+    background-color: #012456;
+    margin: 0 auto !important;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+
+#line {
+    border-bottom: 1px solid white;
+    margin: 10px 0;
+}
+
+img {
+    max-width: 70%;
+}

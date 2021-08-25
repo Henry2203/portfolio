@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 62.5%;
+    margin: 10px 10px;
+}
+#register {
+    background-color: #BDDB62;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    -moz-border-radius:10px 10px 10px 10px;
+    border-radius:10px 10px 10px 10px;
+    list-style-type: none;
+    color: #690;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+#register > * {
+    flex-basis: 0px;
+    flex-grow: 1; 
+    order: 2;
+}
+#register a {
+    text-decoration: none;
+    color: #360;
+}
+#reg {
+    margin: 0px;
+    padding: 5px 10px;
+}
+#find {
+    margin: 0px;
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+}
+#find a {
+    float: right;
+}
+i {
+    padding-right: 5px;
+    color: #360;
+}
+a {
+    color: #360;
+}
+#message {
+    clear: both;
+    font-weight: bold;
+    font-size: 110%;
+    color:white ;
+    background-color:#92B91C ;
+    text-align: center;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 1.5rem;
+}
+#message p {
+    margin: 0px;
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+}
+#message a {
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    font-weight: normal;
+    color: #360;
+    text-decoration: none;
+}
+#message strong  {
+    text-transform: uppercase;
+}

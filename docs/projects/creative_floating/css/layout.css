@@ -1,0 +1,128 @@
+body {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+    max-width: 1024px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.container{
+    margin: 5px 5px 0 5px;
+    box-sizing: border-box;
+    max-width: 1500px;
+    border: solid black 1px;
+    border-radius: 5px;
+    background-color: gainsboro;
+    background-image: linear-gradient(to bottom right, gainsboro, white);
+    padding: 1em;
+    
+}
+#flex {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    margin-left: 15px;
+}
+#flex1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+#reverse{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+#reverse .image img{
+    width: 800%;
+    box-sizing: border-box;
+    padding: 5px;
+    border: 1px solid lightgray;
+    border-bottom-color:darkgrey;
+    box-shadow: -6px 6px darkgrey;
+    max-width: 100%;
+    background-color: white;
+}
+
+.container .text p {
+    text-align: initial;
+}
+.clearfix {
+    overflow:auto;
+}
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: icon;
+    clear: both;
+    height: 0;
+}
+.container .heading {
+    width: 70%;
+    box-sizing: border-box;
+}
+.container .image {
+    width: 200%;
+    max-width: 20%;
+    box-sizing: border-box;
+}
+.container .text {
+    width: 70%;
+    box-sizing: border-box;
+}
+p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 140%;
+    font-size: 1em;
+}
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.image img {
+    width: 800%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid lightgray;
+    border-bottom-color:darkgrey;
+    box-shadow: 6px 6px darkgrey;
+    max-width: 100%;
+    background-color: white;
+}
+.container .image img {
+    padding: 5px;
+    border-color: black;
+}
+@media screen and (min-width:425px) and (max-width:1920px){
+    .container .image img {
+        min-width: 100%;
+    }
+}
+@media screen and (max-width:425px) {
+    body{
+        margin: 0px;
+        width: 100%;
+    }
+    .container {
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        min-width: 320px;
+        padding: 16px;
+    }
+    .container .image {
+        width: 500%;
+        max-width: 200%;
+        box-sizing: border-box;
+    }
+
+}

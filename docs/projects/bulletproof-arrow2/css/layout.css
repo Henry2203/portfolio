@@ -1,0 +1,100 @@
+#container{
+    display: flex;
+    flex-direction: column;
+}
+#container2{
+    display: flex;
+    flex-direction: row;
+}
+#container3{
+    display: flex;
+    flex-direction: column;
+}
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+.arrow{
+    background-image: url(../images/arrow_mask_left.gif);
+    background-repeat: no-repeat;
+    max-width: 100%;
+    background-position: 0px 50%;
+    background-size: 100% auto;
+    background-color: #693;
+    clear: both;
+    margin-left: auto;
+    margin-right: 8px;
+}
+.arrow2{
+    background-size: contain;
+    background-image: url(../images/arrow_mask_right.gif);
+    background-position: right;
+    background-color: rgb(221, 26, 26);
+    background-size: 100% auto;
+    clear: both;
+    margin-right: auto;
+    margin-left: 8px;
+}
+p{
+    color:black;
+    max-width: 100%;
+}
+#container h1{
+    padding: 8px 10px 8px 10px;
+    margin-top: 8px;
+    width: 200px;
+    text-align: right;
+    font-size: 32px;
+    color: white;
+}
+#container h2{
+    padding: 8px 10px 8px 50px;
+    margin-top: 8px;
+    font-size: 24px;
+    color: white;
+}
+#container h3{
+    padding: 8px 10px 8px 35px;
+    margin-top: 8px;
+    font-size: 18.72px;
+    color: white;
+}
+#container h4{
+    padding: 8px 10px 8px 20px;
+    margin-top: 8px;
+    font-size: 16px;
+    color: white;
+}
+/*Vasemman loppu*/
+/*Oikean alku*/
+#container3 h1 {
+    padding: 8px 10px 8px 10px;
+    margin-top: 8px;
+    width: 200px;
+    font-size: 32px;
+    color: white;
+}
+#container3 h2 {
+    padding: 8px 50px 8px 10px;
+    margin-top: 8px;
+    font-size: 24px;
+    color: white;
+}#container3 h3 {
+    padding: 8px 35px 8px 10px;
+    margin-top: 8px;
+    font-size: 18.72px;
+    color: white;
+}#container3 h4 {
+    padding: 8px 10px 8px 10px;
+    margin-top: 8px;
+    font-size: 16px;
+    color: white;
+}
+
+@media only screen and (max-width: 375px) {
+    .arrow, .arrow2 {
+        display: none;
+    }
+    article {
+        margin: 8px 8px 8px 8px;
+    }
+  }

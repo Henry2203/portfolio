@@ -1,0 +1,28 @@
+@charset "utf-8";
+body {
+    width: 100%;
+    font-size: 62.5%;
+}
+header {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 4em;
+    margin: 0px;
+    padding: 0px;
+    background-color: #e0e0e0;
+    background-image: url(../images/blue_background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+header h1{
+    margin: 0px;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    padding-left: 20px;
+    color: white;
+    background-image:url(../images/blue_line.png),
+                        url(../images/blue_line\ -\ Copy.png);
+    background-repeat: no-repeat,
+                        no-repeat;
+    background-position: bottom,
+                        top;
+}

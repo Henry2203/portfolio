@@ -1,0 +1,87 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 62,5%;
+    background: url(images/shell-bg.jpg) ;
+    background-repeat:no-repeat;
+    background-color: black; 
+    background-color: top left ;
+    background-attachment: fixed;
+    min-width: 480px;
+}
+h1 {
+    font-size: 2.4em;
+    padding-bottom: 10px;
+    padding-top: 50px;
+    background-color: rgb(170, 204, 238);
+    color: black;
+    text-align: right;
+    font-weight: bold;
+    font-family: sans-serif;
+    padding-right: 5px;
+}
+h2 {
+    font-size: 2em;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+p {
+    font-size: 1.3em;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+ul {
+    font-size: 1.6em;
+    padding-bottom: 10px;
+    list-style: circle;
+    margin-left: 40px;
+}
+div {
+    font-size: 1.6em;
+    padding-bottom: 10px;
+    list-style: square;
+    margin-left: 20px;
+}
+pre {
+    font-size: 1.3em;
+    font-family: 'Courier New', Courier, monospace;
+    padding-bottom: 10px;
+    padding-right: 15px;
+}
+.nav-lista {
+    list-style: none;
+    margin-left: 0;
+}
+nav {
+    font-size: 1,6em;
+    height: 700px;
+    width: 160px;
+    margin-top: 52px;
+    float: left;
+}
+article {
+    font-size: 1,3em;
+    color: bisque;
+    border:5px solid #FFCC99;
+    background-color: rgba(72, 112, 153, 0.7) ;
+    margin-top: 26px;
+    margin-left: 161px;
+    margin-right: 26px;
+    margin-bottom: 26px;
+}
+nav a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    font-family: sans-serif;
+    padding: 5px 10px;
+    margin-bottom: 2px;
+    color: #FFFFCC;
+    background-color: rgba(0, 0, 0, 0.7) ;
+}
+nav a:hover {
+    color: #441111;
+    background-color: rgba(255, 255, 255, 70%)
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <script>
+        var header = document.createElement("header");
+        document.body.appendChild(header);
+        header.setAttribute("id", "ylatunniste");
+
+
+        var tag = document.createElement("h1");
+        var text = document.createTextNode("Tämä on artikkelin otsikko");
+        tag.appendChild(text);
+        var element = document.getElementById("ylatunniste");
+        element.appendChild(tag);
+
+        var tag = document.createElement("p");
+        var text = document.createTextNode("Ensimmäinen kappale! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra rutrum erat, sed lacinia erat pharetra quis. Donec nec sollicitudin lorem. Nunc non aliquam eros, nec commodo massa. Quisque vel tortor varius, tincidunt enim vel, mollis magna. Vestibulum semper justo nulla. Proin egestas accumsan est. Mauris sit amet commodo quam. Vestibulum in tellus sit amet purus tempor lobortis. Cras sit amet sapien sapien.");
+        tag.appendChild(text);
+        var element = document.getElementById("ylatunniste");
+        element.appendChild(tag);
+
+
+
+        var section = document.createElement("section");
+        document.body.appendChild(section);
+        section.setAttribute("id", "rinnakkain");
+
+        var tag = document.createElement("p");
+        var text = document.createTextNode("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra rutrum erat, sed lacinia erat pharetra quis. Donec nec sollicitudin lorem. Nunc non aliquam eros, nec commodo massa. Quisque vel tortor varius, tincidunt enim vel, mollis magna. Vestibulum semper justo nulla. Proin egestas accumsan est. Mauris sit amet commodo quam. Vestibulum in tellus sit amet purus tempor lobortis. Cras sit amet sapien sapien.");
+        tag.appendChild(text);
+        var element = document.getElementById("rinnakkain");
+        element.appendChild(tag);
+
+
+
+
+        var figure = document.createElement("figure");
+        element.appendChild(figure);
+        figure.setAttribute("id", "kuvanpaikka");
+
+        var x = document.createElement("img");
+        x.setAttribute("src", "kuva.png");
+        x.setAttribute("width", "100% !important");
+        var element = document.getElementById("kuvanpaikka");
+        element.appendChild(x);
+
+
+
+
+        var footer = document.createElement("footer");
+        document.body.appendChild(footer);
+        footer.setAttribute("id", "alatunniste");
+
+        var tag = document.createElement("p");
+        var text = document.createTextNode("© 2020 Henry Müil");
+        tag.appendChild(text);
+        var element = document.getElementById("alatunniste");
+        element.appendChild(tag);
+    </script>
+</body>
+
+</html>

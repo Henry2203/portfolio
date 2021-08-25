@@ -1,0 +1,47 @@
+body {
+    color: aliceblue ; 
+    font-size: 2em ;
+}
+body * {
+    padding: 0 ;
+    margin: 0 ;
+}
+p {
+    padding: 10px ;
+}
+header {
+    background-color:  #ff2323 ;
+}
+nav {
+    background-color: #F28E30 ;
+}
+article {
+    margin-bottom: 10px;
+    background-color: #78c044 ;
+}
+section {
+    background-color: #febf15 ;
+    padding: 10px; 
+}
+section article:last-child {
+    margin-bottom: 0;
+}
+aside {
+    background-color: #086fb2 ;
+}
+footer {
+    background-color: #932c8c ;
+}
+.parent {
+    display: flex;
+    flex-direction: row ;
+    flex-wrap: wrap;
+
+}
+.parent > * {
+     flex-basis: 100% ;
+     flex-grow: 1 ;
+}
+.parent .column {
+    flex-basis: 0;
+}

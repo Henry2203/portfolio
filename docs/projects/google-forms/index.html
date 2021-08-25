@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Mitä HEAD-osaan kannataa lisätä: https://github.com/joshbuchea/HEAD -->
+		<meta charset="utf-8"> <!-- Ääkköset käyttöön tällä sivulla -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Business college palvelujen sijainti">
+		<!-- Provides information about an author or another person -->
+		<link rel="me" href="mailto:s1900934@edu.bc.fi">
+		<title>Google Foorms-kyselyt</title>
+		<link href="https://fonts.googleapis.com/css?family=Nova+Mono&display=swap" rel="stylesheet">
+		<!-- CSS-säännöt lisätään style-tagin sisään -->
+		<style>
+			/* CSS-säännöt Mobile-näkymälle */
+			body{ 
+				font-family: 'Nova Mono', monospace;
+			}
+			section {
+				display: 100%;
+			}
+			section iframe {
+				    width: 100%;
+			}
+			
+			/* CSS-säännöt Desktop-näkymälle */
+			@media only screen and (max-width: 768px) {
+			
+				.parent {   /* tämä sääntö section-tagille */
+					display: flex;
+					flex-direction: row;
+					flex-wrap: wrap;
+				}
+				.parent > * {   /*tämä säännöt sectionin lapsille */
+					flex-basis: 33%;
+					/* flex-grow:1; */
+				}
+			}
+			
+		</style>
+	</head>
+	<body>
+		<style>
+			
+		</style>
+		<h1>Google Foorms-kysely linkkinä ja upotettuna</h1>
+		<h2>Linkki</h2> 
+		<p>Käy vastaamassa oheiseen kyselyyn: 
+			<a href="https://forms.gle/84MPJ5dEMtCYd19o9" target="_blank">"Mikä polttoaine ja hinta?"</a>
+		</p>
+		<h2>Kysely upotettuna</h2>
+		
+		<section>
+			<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfbqOn8HyRm2KaU4dKEVhOKLp2hf7akOpI0bhipPoqcTHL3Zg/viewform?embedded=true" height="750" frameborder="0" marginheight="5" marginwidth="0">Laadimine…</iframe>
+		</section>
+		<footer>
+			<p>&#169; 2019 Henry Müil.</p>
+		</footer>
+	</body>
+</html>

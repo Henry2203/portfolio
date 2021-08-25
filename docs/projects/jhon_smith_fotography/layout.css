@@ -1,0 +1,70 @@
+body  {
+    font-family: 'Raleway', sans-serif;
+    max-width: 1024px;
+    margin-left: auto ;
+    margin-right: auto ;
+}
+/*kuvan suuruus*/
+figure img {
+    max-width: 100%;
+}
+header {
+    width: 100%;
+    background-color: #b9c826 ;
+    border-radius: 100px 100px 0 0;
+}
+h1 {
+    font-size: 36px ;
+}
+p {
+    margin-bottom: 10px;
+}
+footer {
+    padding: 5px;
+    font-size: 26px;
+    background-color: #b9c826 ;
+    border-radius: 100px;
+    text-align: center;
+}
+.flex-container {
+    display: flex;
+    justify-content: center;
+}
+.active {
+    background-color: #b9c826 ;
+    color: rgb(255, 255, 255);
+    border-radius: 0 0 20px 20px;
+    border-style: dashed;
+}
+li a:hover {
+    background-color: #b9c826 ;
+    color: rgb(255, 255, 255);
+    border-radius: 0 0 20px 20px;
+}
+.flex-container > li { /* Tämä on flex-lapsien sääntö*/
+    width: 100px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 20px;
+}
+/*Navigointikohteen yhdelle riville flexin kanssa */ 
+.flex-container a { /*Tämä on navikointi kohteinen parent*/
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 0 5px 5px 5px;
+    text-decoration: none;
+    font-size: 17px;
+}
+/* säännöt isoa näyttöä varten (leveys vähintään 768)*/
+@media only screen and (min-width: 768px) {
+    .parent {
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: nowrap;
+    }
+    .parent > * {
+        flex-basis: 0;
+        flex-grow: 1;
+    }
+}

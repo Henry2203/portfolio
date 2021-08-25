@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="layout.css">
+    <link rel=" stylesheet " href="reset.css ">
+    <title>Responsive Album</title>
+    <script src="https://kit.fontawesome.com/574e2e8518.js " crossorigin="anonymous "></script>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+</head>
+
+<body class="no-touch">
+    <article class="wrap">
+
+        <!-- Define all of the tiles: -->
+        <section class="box">
+            <figure class="boxInner">
+                <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/7.jpg" />
+                <figcaption class="titleBox">Butterfly</figcaption>
+            </figure>
+        </section>
+        <section class="box">
+            <figure class="boxInner">
+                <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/1.jpg" />
+                <figcaption class="titleBox">An old greenhouse</figcaption>
+            </figure>
+        </section>
+        <section class="box">
+            <figure class="boxInner">
+                <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/2.jpg" />
+                <figcaption class="titleBox">Purple wildflowers</figcaption>
+            </figure>
+        </section>
+        <section class="box">
+            <figure class="boxInner">
+                <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/3.jpg" />
+                <figcaption class="titleBox">A birdfeeder</figcaption>
+            </figure>
+        </section>
+        <section class="box">
+            <figure class="boxInner">
+                <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/10.jpg" />
+                <figcaption class="titleBox">Crocus close-up</figcaption>
+            </figure>
+        </section>
+        <section class="box">
+            <figure class="boxInner">
+                <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/4.jpg" />
+                <figcaption class="titleBox">The garden shop</figcaption>
+            </figure>
+        </section>
+        <section class="box">
+            <figure class="boxInner">
+                <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/5.jpg" />
+                <figcaption class="titleBox">Spring daffodils</figcaption>
+            </figure>
+        </section>
+        <section class="box">
+            <figure class="boxInner">
+                <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/6.jpg" />
+                <figcaption class="titleBox">Iris along the path</figcaption>
+            </figure>
+        </section>
+        <section class="box">
+            <figure class="boxInner">
+                <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/8.jpg" />
+                <figcaption class="titleBox">The garden blueprint</figcaption>
+            </figure>
+        </section>
+        <section class="box">
+            <figure class="boxInner">
+                <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/9.jpg" />
+                <figcaption class="titleBox">The patio</figcaption>
+            </figure>
+        </section>
+        <section class="box">
+            <figure class="boxInner">
+                <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/11.jpg" />
+                <figcaption class="titleBox">Bumble bee collecting nectar</figcaption>
+            </figure>
+        </section>
+        <section class="box">
+            <figure class="boxInner">
+                <img src="http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/images/demo/12.jpg" />
+                <figcaption class="titleBox">Winding garden path</figcaption>
+            </figure>
+        </section>
+
+    </article>
+    <!-- /#wrap -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            // See if this is a touch device
+            if ('ontouchstart' in window) {
+                // Set the correct [touchscreen] body class
+                $('body').removeClass('no-touch').addClass('touch');
+
+                // Add the touch toggle to show text when tapped
+                $('div.boxInner img').click(function() {
+                    $(this).closest('.boxInner').toggleClass('touchFocus');
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>

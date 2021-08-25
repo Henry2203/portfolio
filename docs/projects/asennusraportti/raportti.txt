@@ -1,0 +1,17 @@
+﻿Alku
+*---* 
+Etunimi:Henry
+Sukunimi:Muil 
+Henkilötunnus:220303A695T 
+Sähköposti:henry.muil@gmail.com
+Puhelinnumero:0448557351 
+Käyttöjärjestelmän päivitysten
+asennukset: Done
+Valmistajan ohjelmisto ja laiteajurien
+päivitykset: Done
+Virustorjuntaohjelmiston asennus:Done
+Nettiyhteyden asennus ja toimivuuden
+tarkistus:Done
+Nettiselaimien asennukset:Done
+Muiden ohjelmien asennukset:Done
+*---* 

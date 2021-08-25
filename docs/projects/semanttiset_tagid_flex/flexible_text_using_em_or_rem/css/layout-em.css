@@ -1,0 +1,50 @@
+@charset "utf-8";
+/*CSS Document*/
+
+/*default font sixe on most browsers is 16px*/
+body {
+    font-size: 62,5%;
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1 {
+    font-size: 2em;
+    background-color: #818181;
+    margin-bottom: 0.5em;
+}
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 0.5em;
+}
+p {
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+}
+#sidebar {
+    font-size: 1em;
+}
+p abbr {
+    font-size: 2em;
+}
+/*fonttien koot loppu*/
+.flex-container {
+    display: flex;
+}
+.parent{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: #D5D9D8;
+}
+.parent > * {
+    flex-basis: 0px;
+    flex-grow: 1;
+    order: 2;
+}
+#sidebar {
+    background-color: #C0C0C0;
+}
+footer {
+    background-color: #D3D3D3;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="button">Fontin koko</button>
+    <p id="text" style="font-size: 16px;" class="fonttikoko">16px</p>
+
+    <script>
+        let nappi = document.getElementById('button');
+        let esine = document.getElementById('text');
+        let fonttikoko = document.querySelector(".fonttikoko");
+        nappi.addEventListener("click", () => {
+            esine.style.fontSize = "20px";
+            fonttikoko.innerHTML = esine.style.fontSize;
+            nappi.addEventListener("click", () => {
+                if (esine.style.fontSize == "20px") {
+                    esine.style.fontSize = "24px";
+                    fonttikoko.innerHTML = esine.style.fontSize;
+
+                } else if (esine.style.fontSize == "24px") {
+                    esine.style.fontSize = "28px";
+                    fonttikoko.innerHTML = esine.style.fontSize;
+
+                } else if (esine.style.fontSize == "28px") {
+                    esine.style.fontSize = "32px";
+                    fonttikoko.innerHTML = esine.style.fontSize;
+
+                } else {
+                    esine.style.fontSize = "20px";
+                    fonttikoko.innerHTML = esine.style.fontSize;
+
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

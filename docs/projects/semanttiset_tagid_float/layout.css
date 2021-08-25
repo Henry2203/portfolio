@@ -1,0 +1,45 @@
+
+body {
+    color: aliceblue ; 
+    font-size: 2em ;
+}
+body * {
+    padding: 0 ;
+    margin: 0 ;
+}
+p {
+    padding: 10px ;
+}
+header {
+    background-color:  #ff2323 ;
+}
+#kappale1 {
+    background-color: #78c044 ;
+    margin: 10px;
+}
+#kappale2 {
+    background-color: #78c044 ;
+    margin: 10px;
+}
+nav {
+    background-color: #F28E30 ;
+}
+section {
+    background-color: #febf15 ;
+}
+aside {
+    background-color: #086fb2 ;
+}
+footer {
+    background-color: #932c8c ;
+    clear: both;
+}
+.column {
+    overflow: hidden; 
+}
+.container {
+    width: 50% ;
+    float: left;
+    padding-bottom: 1000px;
+    margin-bottom: -1000px;
+}

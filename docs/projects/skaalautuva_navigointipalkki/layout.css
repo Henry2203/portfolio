@@ -1,0 +1,62 @@
+body {
+    margin-top: 10px;
+    display: block;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*navigoinnin alku------------------------------------*/
+nav ul {
+    float: left;
+    width: 100%;
+    padding-top: 15px;
+    padding-left: 20px;
+    background-image: url(images/nav_bg.gif);
+    background-color: #ffcb2d;
+    list-style-type: none;
+    background-repeat: repeat-x;
+    background-position: left bottom;
+    border-radius: 10px 10px 0 0;
+}
+nav ul li {
+    float: left;
+    font-size: 16px;
+    margin-top: 0px;
+    font-size: 1.6em;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    padding: 0px;
+    font-size: 80%;
+}
+nav ul li a {
+    display: block;
+    padding: 4px 8px;
+    color: #333;
+    text-decoration: none;
+    border-width: 1px;
+    border-style: solid;
+    border-bottom-style: none;
+    border-color: #9b8748;
+    background-color: #EBCB6A;
+    border-radius: 5px 5px 0 0;
+}
+nav ul li a:hover, nav ul li a.active {
+    color: #333;
+    background-color: #FFF;
+    border-color: #000000;
+    padding-bottom: 5px;
+}
+nav {
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+}
+/*navigoinnin loppu---------------------------------*/
+p {
+    padding: 10px;
+}
+#content {
+    border: #333;
+    border-style: solid;
+    border-radius: 10px 10px 10px 10px;
+    border-width: 1px;
+}

@@ -1,0 +1,129 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    max-width: 80%;
+    margin: auto;
+}
+
+.col-3 {
+    margin-right: 1%;
+}
+
+.neljasosa {
+    width: 24.25%;
+    float: left;
+}
+
+.puolet {
+    width: 49.5%;
+    float: left;
+}
+
+.brown-text {
+    color: rgb(167, 120, 66);
+}
+
+
+/*kaksi kolumnia*/
+
+.col-2 {
+    margin-right: 1%;
+}
+
+.levea {
+    width: 66%;
+    float: left;
+}
+
+.kapea {
+    width: 33%;
+    float: left;
+}
+
+p,
+h2 {
+    margin: 10px;
+}
+
+
+/*kaksi ja puoli kolumnia*/
+
+.col-2puoli {
+    margin-right: 1%;
+}
+
+.vasen {
+    width: 66%;
+    float: left;
+}
+
+.oikea {
+    width: 33%;
+    float: left;
+}
+
+.ala {
+    float: left;
+    width: 49.5%;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    clear: both;
+    margin-bottom: 3%;
+}
+
+.col-4 section {
+    float: left;
+    width: 25%;
+}
+
+.offset section {
+    float: left;
+    width: 50%;
+}
+
+.vasen2 {
+    float: left;
+    width: 66%;
+}
+
+.oikea2 {
+    float: left;
+    width: 33%;
+}
+
+.kolmasosa {
+    float: left;
+    width: 33%;
+}
+
+.vasen3 {
+    float: left;
+    width: 66%;
+}
+
+.oikea3 {
+    float: left;
+    width: 33%;
+}
+
+.puolikas {
+    float: left;
+    width: 49.5%;
+}
+
+.vaseniso {
+    float: left;
+    width: 66%;
+}
+
+.oikeapieni {
+    float: left;
+    width: 33%;
+}
+
+article {
+    clear: both;
+}

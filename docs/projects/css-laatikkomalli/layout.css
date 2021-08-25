@@ -1,0 +1,87 @@
+/*kaikkiin tageihin bodyn sisällä marginit ja paddingit nollaksi*/
+body * { 
+    margin:0;
+    padding:0;
+    
+}
+body {
+    margin: 10px;
+}
+section {
+    background-color: rgb(188, 221, 237);
+    margin-bottom: 10px;
+}
+#toka {
+    border: black 1px solid;
+    border-width: 1px 1px 1px 1px;
+}
+#komas {
+    border: black 1px solid;
+    border-width: 1px 1px 1px 1px;
+}
+h1 {
+    padding: 10px;
+}
+.sininen-tausta {
+    padding: 10px;
+    background-color: #87ABB8;
+    text-align: right;
+    text-transform: lowercase;
+
+}
+p {
+    padding: 0;
+    padding-top:0;
+}
+pre {
+    padding: 10px 10px 10px 30px;
+    padding-top:0;
+}
+ul {
+    padding: 10px 10px 10px 30px;
+    padding-top:0;
+}
+
+.iso-kirjain {
+    font-size: 500%;
+    background-color: #568;
+    float: left;
+    width: 1.2em;
+    text-align: center;
+    padding: 0.1em 0.1em 0;
+    color: white;
+    border: solid white 1px;
+    border-width: 0 0.2em 0.2em 0;
+    margin: 0 0.5em 0.2em 0;
+}
+/* Responsiivinen kuva vaatii seuraavat kaksi sääntöä */
+ figure {
+     display:block;
+     
+ }
+ figure img {
+     max-width: 100%;
+ }
+ .suurennuslasi {
+     float: left;
+     width: 10%;
+     margin:-0.1em -1px 0 -0.1em;
+     border: black 1px solid;
+     border-width: 0 1px 1px 0;
+    } 
+.tausta {
+    background-color: rgb(255, 255, 255);
+    float: left;
+    width: 56%;
+    border: black 1px solid;
+    border-width: 0 1px 1px 0;
+    margin: -1px 25px 10px -1px;
+}
+.boxi {
+    background-color: rgb(255, 255, 255);
+    float: right;
+    width: 56%;
+    border: black 1px solid;
+    border-width: 1px 0 1px 1px;
+    margin: 0.2em -1px 0.2em 0.5em;
+}

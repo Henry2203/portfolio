@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mansalva&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Turret+Road&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital@1&display=swap" rel="stylesheet">
+</head>
+
+<button id="button"> Vaihda fontti
+    </button>
+<p id="text" style="font-size: 16px; font-family:'Courier Prime', monospace ;" class="fonttikoko">Käytössä oleva fontti: "Courier Prime", monospace
+</p>
+
+
+<body>
+    <script>
+        let nappi = document.getElementById('button');
+        let text = document.getElementById('text');
+        let fonttikoko = document.querySelector(".fonttikoko");
+        nappi.addEventListener("click", () => {
+            text.style.fontSize = "16px";
+            text.style.fontFamily = "'Roboto', sans-serif";
+            fonttikoko.innerHTML = "Käytössä oleva fontti: " + text.style.fontFamily;
+            nappi.addEventListener("click", () => {
+                if (text.style.fontSize == "16px") {
+                    text.style.fontSize = "16.01px";
+                    text.style.fontFamily = "'Mansalva', cursive";
+                    fonttikoko.innerHTML = "Käytössä oleva fontti: " + text.style.fontFamily;
+
+                } else if (text.style.fontSize == "16.01px") {
+                    text.style.fontSize = "16.001px";
+                    text.style.fontFamily = "'Grenze', serif";
+                    fonttikoko.innerHTML = "Käytössä oleva fontti: " + text.style.fontFamily;
+
+                } else if (text.style.fontSize == "16.001px") {
+                    text.style.fontSize = "16.0001px";
+                    text.style.fontFamily = "'Turret Road', cursive";
+                    fonttikoko.innerHTML = "Käytössä oleva fontti: " + text.style.fontFamily;
+                } else if (text.style.fontSize == "16.0001px") {
+                    text.style.fontSize = "16.0002px";
+                    text.style.fontFamily = "'Courier Prime', monospace";
+                    fonttikoko.innerHTML = "Käytössä oleva fontti: " + text.style.fontFamily;
+                } else {
+                    text.style.fontSize = "16px";
+                    text.style.fontFamily = "'Roboto', sans-serif";
+                    fonttikoko.innerHTML = "Käytössä oleva fontti: " + text.style.fontFamily;
+
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

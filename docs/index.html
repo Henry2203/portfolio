@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="This is Hensy's portfolio">
+    <meta name="keywords" content="Henry Müil Portfolio">
+    <meta name="author" content="Henry Müil">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/icon.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/574e2e8518.js" crossorigin="anonymous"></script>
+    <title>Henry Müil - Portfolio</title>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo underline">Henry Müil</a>
+        <div class="header-right">
+            <ul>
+                <li onclick="ScrollToAbout()"><a class="underline">About</a></li>
+                <li onclick="ScrollToPortfolio()"><a class="underline">Portfolio</a></li>
+                <li onclick="ScrollToContact()"><a class="underline">Contact</a></li>
+            </ul>
+        </div>
+        <div class="dropdown">
+            <i id="icon" onclick="dropDown()" class="fas fa-bars  fa-2x dropbtn"></i>
+            </a>
+            <div id="dropdown" class="dropdown-content">
+                <li onclick="ScrollToAbout()"><a>About</a></li>
+                <li onclick="ScrollToPortfolio()"><a>Portfolio</a></li>
+                <li onclick="ScrollToContact()"><a>Contact</a></li>
+            </div>
+        </div>
+    </header>
+
+    <article>
+        <section class="banner">
+            <div class="home-start">
+                <div class="home-left">
+                    <h1>Henry Müil
+                    </h1>
+                    <p>PORTFOLIO</p>
+                    </p>
+                    <p>Junior Web-developer <br>HTML - CSS - JavaScript - WordPress </p>
+                </div>
+                <div class="text-logo">
+                    <img src="./images/Cv-pic.png" alt="">
+                </div>
+            </div>
+        </section>
+        <div class="wave-top"></div>
+        <section class="content" id="about-start">
+            <div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi quibusdam suscipit sapiente deleniti quasi totam neque qui ipsa et rerum!</p> <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, pariatur praesentium iusto obcaecati blanditiis saepe consequatur fugit id sed molestias nulla nesciunt voluptas distinctio recusandae omnis totam, tempore culpa vitae corporis
+                    autem corrupti mollitia magnam eius. Labore, est expedita quia placeat itaque fugiat consequuntur officia veritatis ad quas veniam minus neque quisquam dolorum porro vel et qui nihil pariatur eveniet nostrum. Inventore voluptatem quidem
+                    sit suscipit ex dignissimos tempore enim ipsam commodi maxime fuga eveniet, accusantium dolores dolor expedita consequatur iusto recusandae similique? Nobis doloribus reprehenderit unde quam ad placeat? Ipsam consequuntur odit blanditiis
+                    similique! Itaque cum necessitatibus suscipit praesentium?</p>
+            </div>
+        </section>
+        <div class="wave-middle-bottom"></div>
+
+        <section class="dropPort" id="portfolio-start">
+            <div class="parent-grid-container">
+                <!--Css-->
+                <button onclick="showCss()" class="showButton" style="grid-area: css;" id="CssBut">CSS-practice</button>
+                <div>
+                    <ul style="display:none; margin:10px 0 10px 0;" id="Css">
+                        <li><a href="./projects/css-laatikkomalli/index.html">CSS-laatikkomalli</a></li>
+                        <li>
+                            <a href="./projects/visual_code_studio_koodaajan_apuna/index.html">Visual Code Studio koodaajan
+                            apuna</a>
+                        </li>
+                        <li>
+                            <a href="./projects/semanttiset_tagid_float/index.html">Semanttiset tagit float</a>
+                        </li>
+                        <li>
+                            <a href="./projects/semanttiset_tagid_flex/index.html">Semanttiset tagit flex</a>
+                        </li>
+                        <li>
+                            <a href="./projects/flex_box_malli/index.html">Flex Box malli auki purettuna</a>
+                        </li>
+                        <li>
+                            <a href="./projects/jhon_smith_fotography/index.html">John Smith Photography</a>
+                        </li>
+                        <li>
+                            <a href="./projects/skaalautuva_navigointipalkki/index.html">Skaalautuva navigointipalkki</a>
+                        </li>
+                        <li><a href="./projects/nice-navigation/index.html">Nice Navigation</a></li>
+                        <li>
+                            <a href="./projects/flexible_text_using_rem/index.html">Flexible text using rem</a>
+                        </li>
+                        <li>
+                            <a href="./projects/flexible_text_using_em/index.html">Flexible text using em</a>
+                        </li>
+                        <li>
+                            <a href="./projects/sarkymattomat_rivit/index.html">Särkymättömät rivit</a>
+                        </li>
+                        <li><a href="./projects/joustavat_rivit/index.html">Joustavat rivit</a></li>
+                        <li><a href="./projects/creative_floating/index.html">Luovaa kelluttamista</a></li>
+                        <li>
+                            <a href="./projects/creative_floating_grid/index.html">Luovaa kelluttamista grid</a>
+                        </li>
+                        <li>
+                            <a href="./projects/bulletproof-arrow/index.html">Bulletproof Arrow – Nuoli otsikon muotoiluna</a>
+                        </li>
+                        <li>
+                            <a href="./projects/bulletproof-arrow2/index.html">Lisää luodinkestäviä nuolia</a>
+                        </li>
+                        <li><a href="./projects/boxhinting/index.html">Vihje laatikosta</a></li>
+                        <li><a href="./projects/sarkymaton-laatikko/index.html">Särkymätön laatikko</a></li>
+                        <li><a href="./projects/flex-harjoitus/index.html">Flexbox-harjoitus</a></li>
+                        <li><a href="./projects/responsive-fluid-grid/index.html">Responsiivinen Fluid Grid-asettelu
+                            web-sivulla</a></li>
+                        <li><a href="./projects/fluid-grid/index.html">Fluid Grid- asettelun soveltaminen</a></li>
+                        <li><a href="./projects/sovella_flexboxia/index.html">Sovella Flexboxia</a></li>
+                        <li><a href="./projects/ilta-sanomat/index.html">Ilta-Sanomat Sivu</a></li>
+                        <li><a href="./projects/responsiivinen-albumi/index.html">Responsiivinen Albumi</a></li>
+                        <li><a href="./projects/html5-ja-css3/index.html">CSS = Styles and Colors</a></li>
+
+                    </ul>
+                </div>
+
+                <!--Java-->
+                <button onclick="showJs()" class="showButton" style="grid-area: Js;" id="JsBut">JavaScript-practice</button>
+                <div>
+                    <ul style="display:none; margin:10px 0 10px 0;" id="Js">
+                        <li>
+                            <a href="./projects/freecodecamp_ja_javascript/index.html">freecodecamp.org ja JavaScript</a>
+                        </li>
+                        <li><a href="./projects/html5-ja-css3/index.html">CSS = Styles and Colors</a></li>
+                        <li><a href="./projects/imagegallery_javascript/index.html">Image gallery javascripts</a></li>
+                        <li><a href="./projects/fonttikoko_javascript/index.html">JavaScript fonttikoko</a></li>
+                        <li><a href="./projects/fonttityyppi_javascript/index.html">JavaScript fonttityyppi</a></li>
+                        <li><a href="./projects/change-image-and-text-with-js/index.html">Vaihda kuva ja teksti javascriptillä</a>
+                        </li>
+                        <li><a href="./projects/rakenna-html/index.html">HTML rakenne JavaScriptillä</a></li>
+                    </ul>
+                </div>
+
+                <!--Angular-->
+                <button onclick="showAngular()" class="showButton" style="grid-area: Angular;" id="AnBut">Angular-practice</button>
+                <div>
+                    <ul style="display:none; margin:10px 0 10px 0" id="Angular">
+                        <li><a href="./projects/bootstrap-start/index.html">Bootstrap-Start</a></li>
+                        <li><a href="./projects/angular_asentaminen/index.html">Angularin asentaminen Windowsiin</a></li>
+                        <li><a href="https://hello-cli-c7bc5.web.app/">Angular-projektin aloittaminen - Hello-cli</a>
+                        </li>
+                        <li><a href="https://angular-ja-bootstrap-4.web.app/">Angular ja Bootstrap 4</a></li>
+                        <li><a href="https://my-dream-app-d934f.web.app/">My Dream App</a></li>
+                        <li><a href="https://angular-dive-beginners.web.app/">Angular Deep Dive For Beginners 1</a></li>
+                        <li>
+                            <a href="./projects/angular-projektit/ts-tutorial/index.html">TypeScript-tutorial</a>
+                        </li>
+                        <li><a href="https://successjawarning.web.app/">Success- ja Warning-ilmoitukset</a></li>
+                        <li><a href="https://henry2203.github.io/Sovella_DataBindingia/">Sovella Angularin neljää Data
+                            Bindingia</a></li>
+                        <li><a href="https://henry2203.github.io/Sovella-Angular-Directive/">Sovella Angular
+                            Directive:jä</a></li>
+                        <li><a href="https://henry2203.github.io/angular-debugging/">Debugging Angular</a></li>
+                        <li><a href="https://henry2203.github.io/Splitting-Apps-to-Components/">Splitting Apps to
+                            Components</a></li>
+                        <li><a href="https://henry2203.github.io/angular-tour-of-heroes/">Angular – Tour of Heroes</a>
+                        </li>
+                        <li><a href="https://henry2203.github.io/tuoteluettelo/">Soveltava tehtävä: Tuoteluettelo
+                            Angularin avulla</a></li>
+                    </ul>
+                </div>
+                <!--Angular-->
+
+                <button onclick="openGame()" class="showButton" style="grid-area: game;">My Game</button>
+
+        </section>
+        <div class="wave-middle-top"></div>
+        <section class="content" id="contact-start">
+            <form id="contact-form">
+                <input type="hidden" name="contact_number">
+                <input type="text" name="title_name" placeholder="Title*" required id="titleName">
+                <input type="email" name="user_email" placeholder="Email*" required id="userEmail">
+                <textarea name="message" placeholder="message*" required id="msg"></textarea>
+                <input type="submit" value="Send" id="sendButton">
+            </form>
+        </section>
+    </article>
+    <i class="fas fa-caret-up" onclick="topFunction()" id="myBtn" title="Go to top"></i>
+    <footer>
+        <p>©2021 | Henry Müil | All Rights Reserved</p>
+    </footer>
+
+    <!--Common scripts-->
+    <script>
+        /*Header Scroll Effect*/
+        window.addEventListener("scroll", function() {
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        });
+
+        /*DropDown Show*/
+        function dropDown() {
+            document.getElementById("dropdown").classList.toggle("show");
+        }
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+
+        /*DropDown Icon Change*/
+        window.addEventListener("click", function() {
+
+            var icon = document.getElementById("icon");
+            var dropD = document.getElementById("dropdown");
+            if (dropD.classList.contains('show')) {
+                icon.classList.replace('fa-bars', 'fa-times');
+            } else {
+                icon.classList.replace('fa-times', 'fa-bars');
+            }
+        });
+
+        /*Nav Click Scroll To Name*/
+        function ScrollToAbout() {
+            var toAbout = document.getElementById("about-start");
+            toAbout.scrollIntoView();
+        }
+
+        function ScrollToPortfolio() {
+            var toPortfolio = document.getElementById("portfolio-start");
+            toPortfolio.scrollIntoView();
+        }
+
+        function ScrollToContact() {
+            var toContact = document.getElementById("contact-start");
+            toContact.scrollIntoView();
+        }
+
+        /*Back To Top Button*/
+        var mybutton = document.getElementById("myBtn");
+
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+        /*Portfolio section*/
+
+        var CssBut = document.getElementById("CssBut");
+        var Css = document.getElementById("Css");
+
+        function showCss() {
+            if (Css.style.display == "none") {
+                Css.style.display = "block";
+                CssBut.style.backgroundColor = "rgba(255, 255, 255, 0.2)";
+                CssBut.style.backgroundImage = "linear-gradient(350deg, #f907fc 0%, #05d6d9 74%)";
+            } else {
+                Css.style.display = "none";
+                CssBut.style.backgroundColor = "rgba(255, 255, 255, 0)";
+                CssBut.style.backgroundImage = "none";
+            }
+        }
+
+        var JsBut = document.getElementById("JsBut");
+        var Js = document.getElementById("Js");
+
+        function showJs() {
+            if (Js.style.display == "none") {
+                Js.style.display = "block";
+                JsBut.style.backgroundColor = "rgba(255, 255, 255, 0.2)";
+                JsBut.style.backgroundImage = "linear-gradient(350deg, #f907fc 0%, #05d6d9 74%)";
+            } else {
+                Js.style.display = "none";
+                JsBut.style.backgroundColor = "rgba(255, 255, 255, 0)";
+                JsBut.style.backgroundImage = "none";
+
+            }
+        }
+
+        var AnBut = document.getElementById("AnBut");
+        var Ag = document.getElementById("Angular");
+
+        function showAngular() {
+            if (Ag.style.display == "none") {
+                Ag.style.display = "block";
+                AnBut.style.backgroundColor = "#f907fc";
+                AnBut.style.backgroundImage = "linear-gradient(350deg, #f907fc 0%, #05d6d9 74%)";
+            } else {
+                Ag.style.display = "none";
+                AnBut.style.backgroundColor = "rgba(255, 255, 255, 0)";
+                AnBut.style.backgroundImage = "none";
+
+            }
+
+        }
+
+        /*Button selected*/
+        const element1 = document.getElementById('CssBut')
+        element1.addEventListener("click", () => {
+            Js.style.display = "none";
+            JsBut.style.backgroundColor = "rgba(255, 255, 255, 0)";
+            JsBut.style.backgroundImage = "none";
+            Ag.style.display = "none";
+            AnBut.style.backgroundColor = "rgba(255, 255, 255, 0)";
+            AnBut.style.backgroundImage = "none";
+        });
+        const element2 = document.getElementById('JsBut')
+        element2.addEventListener("click", () => {
+            Ag.style.display = "none";
+            AnBut.style.backgroundColor = "rgba(255, 255, 255, 0)";
+            AnBut.style.backgroundImage = "none";
+
+            Css.style.display = "none";
+            CssBut.style.backgroundColor = "rgba(255, 255, 255, 0)";
+            CssBut.style.backgroundImage = "none";
+
+        });
+        const element3 = document.getElementById('AnBut')
+        element3.addEventListener("click", () => {
+            Js.style.display = "none";
+            JsBut.style.backgroundColor = "rgba(255, 255, 255, 0)";
+            JsBut.style.backgroundImage = "none";
+            Css.style.display = "none";
+            CssBut.style.backgroundColor = "rgba(255, 255, 255, 0)";
+            CssBut.style.backgroundImage = "none";
+
+        });
+
+        function openGame() {
+            window.open("./Games/index.html", "_self")
+        }
+    </script>
+
+    <!--Extra Security-->
+    <script>
+        // disable right click
+        document.addEventListener('contextmenu', event => event.preventDefault());
+
+        document.onkeydown = function(e) {
+
+            // disable F12 key
+            if (e.keyCode == 123) {
+                return false;
+            }
+
+            // disable I key
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+                return false;
+            }
+
+            // disable J key
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+                return false;
+            }
+
+            // disable U key
+            if (e.ctrlKey && e.keyCode == 85) {
+                return false;
+            }
+        }
+    </script>
+    <!--Email contact script-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("user_7VWazXfq5MXqce2crQLfw");
+        })();
+    </script>
+    <script>
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                if (document.getElementById("userEmail").value.length == 0) {
+                    alert("Please fill areas to contact me!");
+                } else {
+                    emailjs.sendForm('service_lfsjdaz', 'template_9mj2g1d', this)
+                        .then(function() {
+                            console.log('SUCCESS!');
+                            alert("Please fill areas to contact me!");
+                        }, function(error) {
+                            console.log('FAILED...', error);
+                        });
+
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
