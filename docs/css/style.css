@@ -315,18 +315,18 @@ header a:hover {
 }
 
 .wave-top {
-    background-image: url(/images/wave-top.png);
+    background-image: url(../images/wave-top.png);
     height: 100px;
 }
 
 .wave-middle-bottom {
-    background-image: url(/images/wave-middle.png);
+    background-image: url(../images/wave-middle.png);
     transform: rotate( 180deg);
     height: 100px;
 }
 
 .wave-middle-top {
-    background-image: url(/images/wave-middle.png);
+    background-image: url(../images/wave-middle.png);
     height: 100px;
 }
 
