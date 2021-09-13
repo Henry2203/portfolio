@@ -14,16 +14,16 @@ html {
 }
 
 body::-webkit-scrollbar {
-    width: 1em;
+    width: 15px;
 }
 
 body::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: rgba(22, 22, 22, 0.979);
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: darkgrey;
-    outline: 1px solid slategrey;
+    background-color: #05d6d9;
+    border-radius: 5px;
 }
 
 body {
@@ -31,7 +31,7 @@ body {
     position: relative;
     width: 100%;
     height: 100vh;
-    background: url(../images/42332.jpg);
+    background: url(../images/13377124.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -303,167 +303,138 @@ header a:hover {
 
 /*content start*/
 
-.content div {
+.content>div {
     color: #fff;
     max-width: 50%;
     margin: auto;
 }
 
-#about-start {
+@media (max-width: 1000px) {
+    .content>div {
+        color: #fff;
+        max-width: 70%;
+        margin: auto;
+    }
+}
+
+@media (max-width: 830px) {
+    .content>div {
+        color: #fff;
+        max-width: 80%;
+        margin: auto;
+    }
+}
+
+@media (max-width: 440px) {
+    .content>div {
+        color: #fff;
+        max-width: 90%;
+        margin: auto;
+    }
+}
+
+#about {
     background-color: #222222;
-    padding: 90px 0 70px 0;
 }
 
-.wave-top {
-    background-image: url(/images/wave-top.png);
-    height: 100px;
+.langButtons {
+    text-align: center;
 }
 
-.wave-middle-bottom {
-    background-image: url(/images/wave-middle.png);
-    transform: rotate( 180deg);
-    height: 100px;
-}
-
-.wave-middle-top {
-    background-image: url(/images/wave-middle.png);
-    height: 100px;
-}
-
-@media (max-width: 718px) {
-    #about-start {
-        padding: 110px 0 70px 0;
-    }
-}
-
-@media (max-width: 400px) {
-    #about-start {
-        padding: 130px 0 70px 0;
-    }
-}
-
-
-/*Portfolio START*/
-
-.dropPort {
-    min-height: 100%;
-    width: 100%;
-}
-
-.dropPort div {
-    color: #fff;
-    max-width: 200px;
-    margin: auto;
-}
-
-#portfolio-start {
-    padding: 90px 0 70px 0;
-    background-color: #2f2f2f;
-}
-
-.showButton {
+.langButtons button {
     background-color: rgba(255, 255, 255, 0);
+    width: 50px;
     border-radius: 5px;
     border: solid white 1px;
     padding: 5px 8px;
     color: #fff;
 }
 
-.showButton:hover {
-    background-color: rgba(255, 255, 255, 0.137) !important;
-    border: solid #fff 1px;
-    color: #fff;
+.langButtons button:hover {
     cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.137);
 }
 
-#Css li,
-#Js li,
-#Angular li {
-    list-style: none;
-    margin: 10px 0;
+.activeLang {
+    background-color: #f907fc;
+    background-image: linear-gradient(215deg, #f907fc 0%, #05d6d9 74%);
 }
 
-#Css li a,
-#Js li a,
-#Angular li a {
-    color: rgb(255, 255, 255);
+#title {
+    font-size: 24px;
+    margin: 40px 0 20px 0;
+    text-align: center;
+}
+
+#about-content {
+    min-height: 350px;
+}
+
+.downloadButton {
     text-decoration: none;
+    padding: 5px 10px;
+    color: #fff;
+    border-radius: 5px;
+    border: solid white 1px;
+    position: relative;
+    min-height: 200px;
+    background-image: linear-gradient(350deg, #f907fc 0%, #05d6d9 74%);
+    z-index: 1;
 }
 
-#Css li a:hover,
-#Js li a:hover,
-#Angular li a:hover {
-    color: #05d6d9;
-    text-decoration: none;
+.downloadButton::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(150deg, #f907fc 0%, #05d6d9 74%);
+    z-index: -1;
+    transition: opacity 0.2s linear;
+    opacity: 0;
+    border-radius: 5px;
 }
 
-.parent-grid-container {
-    display: grid;
-    grid-template-areas: 'css Js Angular game';
-    max-width: 50% !important;
-    margin: auto !important;
-    grid-gap: 20px;
+.downloadButton:hover::before {
+    opacity: 1;
 }
 
-.parent-grid-container button {
-    font-size: 16px;
+.wave-top {
+    background-image: url(/images/wave-top.jpg);
+    height: 100px;
 }
 
-@media (max-width: 1376px) {
-    .parent-grid-container {
-        display: grid;
-        grid-template-areas: 'css Js' 'Angular game';
-        max-width: 50% !important;
-        margin: auto !important;
-        grid-gap: 20px;
-    }
+.wave-middle-bottom {
+    background-image: url(/images/wave-middle.jpg);
+    transform: rotate( 180deg);
+    height: 100px;
+}
+
+.wave-middle-top {
+    background-image: url(/images/wave-middle.jpg);
+    height: 100px;
 }
 
 @media (max-width: 718px) {
-    .parent-grid-container {
-        display: grid;
-        grid-template-areas: 'css Js' 'Angular game';
-        max-width: 70% !important;
-        margin: auto !important;
-        grid-gap: 20px;
-    }
-    #portfolio-start {
-        padding: 110px 0 70px 0;
+    #about {
+        padding: 50px 0 70px 0;
     }
 }
-
-@media (max-width: 514px) {
-    .parent-grid-container {
-        display: grid;
-        grid-template-areas: 'css Js' 'Angular game';
-        max-width: 90% !important;
-        margin: auto !important;
-        grid-gap: 20px;
-    }
-}
-
-@media (max-width: 400px) {
-    .parent-grid-container {
-        display: grid;
-        grid-template-areas: 'css ''Js' 'Angular'' game';
-        max-width: 90% !important;
-        margin: auto !important;
-        grid-gap: 20px;
-    }
-    #portfolio-start {
-        padding: 130px 0 70px 0;
-    }
-}
-
-
-/*Portfolio END*/
 
 
 /*Contact START*/
 
-#contact-start {
+#contact {
     padding: 70px 0 70px 0;
     background-color: #222222;
+}
+
+#contact-title {
+    color: #fff;
+    font-size: 24px;
+    margin: 0 0 40px 0;
+    text-align: center;
 }
 
 #contact-form {
@@ -598,3 +569,16 @@ footer p {
 
 
 /*Back To Top Button END*/
+
+
+/*Modal-Images START*/
+
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover {
+    opacity: 0.7;
+}

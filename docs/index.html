@@ -10,6 +10,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="images/icon.png">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/modal-image.css">
+    <link rel="stylesheet" href="./css/portfolio.css">
     <script src="https://kit.fontawesome.com/574e2e8518.js" crossorigin="anonymous"></script>
     <title>Henry Müil - Portfolio</title>
 </head>
@@ -46,26 +48,39 @@
                     <p>Junior Web-developer <br>HTML - CSS - JavaScript - WordPress </p>
                 </div>
                 <div class="text-logo">
-                    <img src="./images/Cv-pic.png" alt="">
+                    <img src="./images/Cv-pic.jpg" alt="">
                 </div>
             </div>
         </section>
-        <div class="wave-top"></div>
-        <section class="content" id="about-start">
+
+        <div class="wave-top" id="about-start"></div>
+
+        <section class="content" id="about">
             <div>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi quibusdam suscipit sapiente deleniti quasi totam neque qui ipsa et rerum!</p> <br>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, pariatur praesentium iusto obcaecati blanditiis saepe consequatur fugit id sed molestias nulla nesciunt voluptas distinctio recusandae omnis totam, tempore culpa vitae corporis
-                    autem corrupti mollitia magnam eius. Labore, est expedita quia placeat itaque fugiat consequuntur officia veritatis ad quas veniam minus neque quisquam dolorum porro vel et qui nihil pariatur eveniet nostrum. Inventore voluptatem quidem
-                    sit suscipit ex dignissimos tempore enim ipsam commodi maxime fuga eveniet, accusantium dolores dolor expedita consequatur iusto recusandae similique? Nobis doloribus reprehenderit unde quam ad placeat? Ipsam consequuntur odit blanditiis
-                    similique! Itaque cum necessitatibus suscipit praesentium?</p>
+                <div class="langButtons">
+                    <button id="changeToEng" class="activeLang">Eng</button>
+                    <button id="changeToFin">Fin</button>
+                    <button id="changeToEst">Est</button>
+                </div>
+                <div>
+                    <h1 id="title">About me</h1>
+                    <p id="about-content">Hi, I'm Henry. <br> I am 18 years old and I am a datanom, specialized in web development. I studied at SLK (now known as Business College Helsinki) from 2019 to 2021. <br> Also, I studied at Haaga-Helia University of Applied Sciences
+                        as a bachelor of computer science in 2021. <br> My main skills are HTML, CSS and JavaScript, below you can find my portfolio.<br> I have previous work experience at Power Tammisto where I installed computers for customers.
+                        <br> As an employee I am punctual, do my duties enthusiastically on my own initiative and I am always looking for an opportunity to learn more and do better. <br><br><i class='fas fa-long-arrow-alt-down'></i> More about my skills
+                        <i class='fas fa-long-arrow-alt-down'></i><br><br> <a href='./Henry_Müil-cv-english.pdf' download class='downloadButton'><i class='fas fa-download'></i> Download my CV</a>
+                    </p>
+                </div>
             </div>
         </section>
-        <div class="wave-middle-bottom"></div>
 
-        <section class="dropPort" id="portfolio-start">
+        <div class="wave-middle-bottom" id="portfolio-start"></div>
+
+        <section class="dropPort" id="portfolio">
+            <h1 id="portfolio-title">Portfolio</h1>
+            <p>Business College Helsinki</p>
             <div class="parent-grid-container">
                 <!--Css-->
-                <button onclick="showCss()" class="showButton" style="grid-area: css;" id="CssBut">CSS-practice</button>
+                <button class="showButton" style="grid-area: css;" id="CssBut">CSS-practice</button>
                 <div>
                     <ul style="display:none; margin:10px 0 10px 0;" id="Css">
                         <li><a href="./projects/css-laatikkomalli/index.html">CSS-laatikkomalli</a></li>
@@ -124,7 +139,7 @@
                 </div>
 
                 <!--Java-->
-                <button onclick="showJs()" class="showButton" style="grid-area: Js;" id="JsBut">JavaScript-practice</button>
+                <button class="showButton" style="grid-area: Js;" id="JsBut">JavaScript-practice</button>
                 <div>
                     <ul style="display:none; margin:10px 0 10px 0;" id="Js">
                         <li>
@@ -141,7 +156,7 @@
                 </div>
 
                 <!--Angular-->
-                <button onclick="showAngular()" class="showButton" style="grid-area: Angular;" id="AnBut">Angular-practice</button>
+                <button class="showButton" style="grid-area: Angular;" id="AnBut">Angular-practice</button>
                 <div>
                     <ul style="display:none; margin:10px 0 10px 0" id="Angular">
                         <li><a href="./projects/bootstrap-start/index.html">Bootstrap-Start</a></li>
@@ -171,10 +186,74 @@
                 <!--Angular-->
 
                 <button onclick="openGame()" class="showButton" style="grid-area: game;">My Game</button>
+            </div>
 
+            <p>Haaga-Helia University</p>
+            <div class="parent-grid-container2">
+                <!--Website-->
+                <button class="showButton" style="grid-area: compWeb;" id="compWebBut">Complete website project</button>
+                <div>
+                    <ul style="display:none; margin:10px 0 10px 0;" id="compWeb">
+                        <li><a href="/Digitaalinen_Palvelu/konseptisuunnitelma_Henry_Muil.pdf">Website plan</a></li>
+                        <li><a href="https://kivimuster.github.io/KiviMuster/">KiviMuster-website</a></li>
+                        <li><a href="/Digitaalinen_Palvelu/Loppu_Raportti_Henry.pdf">Website report</a></li>
+                    </ul>
+                </div>
+
+                <!--Java-->
+                <button class="showButton" style="grid-area: Js2;" id="JsBut2">JavaScript-practice</button>
+                <div>
+                    <ul style="display:none; margin:10px 0 10px 0;" id="Js2">
+                        <li><a href="./Orientaatio-ohjelmistotuotanto/viikko-1/palkka.html">Payroll calculator</a></li>
+                        <li><a href="./Orientaatio-ohjelmistotuotanto/viikko-3/Peliautomaatti_2.html">Casino game machine</a></li>
+                        <li><a href="./Orientaatio-ohjelmistotuotanto/viikko-5/mokkipalkinto.html">The prize winner’s raffle </a></li>
+                        <li><a href="./Orientaatio-ohjelmistotuotanto/viikko-6/JSON_saatiedot.html">Weather in helsinki</a></li>
+                        <li><a href="./Orientaatio-ohjelmistotuotanto/viikko-8_Tentti/2.funktio.html">Carpet washing fee calculator</a></li>
+                        <li><a href="./Orientaatio-ohjelmistotuotanto/viikko-8_Tentti/3.html">Players info list</a></li>
+                    </ul>
+                </div>
+
+                <!--Blender-->
+                <button class="showButton" style="grid-area: Blender;" id="blenderBut">Blender-projects</button>
+                <div>
+                    <ul style="display:none; margin:10px 0 10px 0" id="Blender">
+                        <li><img class="ImgThumbnail" src="/images/Blender-images/V7-Static-wallpaper.jpg" style="width:100%;max-width:300px"></li>
+                        <li><img class="ImgThumbnail" src="/images/Blender-images/bamboo-beach.jpg" style="width:100%;max-width:300px"></li>
+                        <li><img class="ImgThumbnail" src="/images/Blender-images/Clock.jpg" style="width:100%;max-width:300px"></li>
+                        <li><img class="ImgThumbnail" src="/images/Blender-images/Cutlery.jpg" style="width:100%;max-width:300px"></li>
+                        <li><img class="ImgThumbnail" src="/images/Blender-images/Japan_house.jpg" style="width:100%;max-width:300px"></li>
+                        <li><img class="ImgThumbnail" src="/images/Blender-images/robotti1-final.jpg" style="width:100%;max-width:300px"></li>
+                        <li><img class="ImgThumbnail" src="/images/Blender-images/Room.jpg" style="width:100%;max-width:300px"></li>
+                        <li><img class="ImgThumbnail" src="/images/Blender-images/ship.jpg" style="width:100%;max-width:300px"></li>
+                        <li><img class="ImgThumbnail" src="/images/Blender-images/wall-lights.jpg" style="width:100%;max-width:300px"></li>
+                    </ul>
+                </div>
+
+                <!--3dprinting-->
+                <button class="showButton" style="grid-area: Printing;" id="printBut">3D-printing</button>
+                <div>
+                    <ul style="display:none; margin:10px 0 10px 0" id="Print">
+                        <li><img class="ImgThumbnail" src="/images/3d-cap.jpg" style="width:100%;max-width:300px"></li>
+                        <li><img class="ImgThumbnail" src="/images/3d-usb.jpg" style="width:100%;max-width:300px"></li>
+                        <li><img class="ImgThumbnail" src="/images/3d-ring.jpg" style="width:100%;max-width:300px"></li>
+                        <li><img class="ImgThumbnail" src="/images/3d-laptop-leg.jpg" style="width:100%;max-width:300px"></li>
+                        <li><img class="ImgThumbnail" src="/images/3d-blender-logo.jpg" style="width:100%;max-width:300px"></li>
+                    </ul>
+                </div>
+
+            </div>
         </section>
-        <div class="wave-middle-top"></div>
-        <section class="content" id="contact-start">
+
+        <!--modal-image-->
+        <div class="modal">
+            <span class="close">&times;</span>
+            <img class="modalImage" id="img01" />
+        </div>
+
+        <div class="wave-middle-top" id="contact-start"></div>
+
+        <section class="content" id="contact">
+            <h1 id="contact-title">Contact me</h1>
             <form id="contact-form">
                 <input type="hidden" name="contact_number">
                 <input type="text" name="title_name" placeholder="Title*" required id="titleName">
@@ -183,226 +262,23 @@
                 <input type="submit" value="Send" id="sendButton">
             </form>
         </section>
+
     </article>
+
     <i class="fas fa-caret-up" onclick="topFunction()" id="myBtn" title="Go to top"></i>
+
     <footer>
         <p>©2021 | Henry Müil | All Rights Reserved</p>
     </footer>
 
-    <!--Common scripts-->
-    <script>
-        /*Header Scroll Effect*/
-        window.addEventListener("scroll", function() {
-            var header = document.querySelector("header");
-            header.classList.toggle("sticky", window.scrollY > 0);
-        });
 
-        /*DropDown Show*/
-        function dropDown() {
-            document.getElementById("dropdown").classList.toggle("show");
-        }
-        window.onclick = function(event) {
-            if (!event.target.matches('.dropbtn')) {
-                var dropdowns = document.getElementsByClassName("dropdown-content");
-                var i;
-                for (i = 0; i < dropdowns.length; i++) {
-                    var openDropdown = dropdowns[i];
-                    if (openDropdown.classList.contains('show')) {
-                        openDropdown.classList.remove('show');
-                    }
-                }
-            }
-        }
+    <script src="/js/nav-bar.js"></script>
+    <script src="/js/about-lang.js"></script>
+    <script src="/js/portfolio.js"></script>
+    <script src="/js/Email.js"></script>
+    <script src="/js/keyBlock.j"></script>
+    <script src="/js/modal_Images.js"></script>
 
-        /*DropDown Icon Change*/
-        window.addEventListener("click", function() {
-
-            var icon = document.getElementById("icon");
-            var dropD = document.getElementById("dropdown");
-            if (dropD.classList.contains('show')) {
-                icon.classList.replace('fa-bars', 'fa-times');
-            } else {
-                icon.classList.replace('fa-times', 'fa-bars');
-            }
-        });
-
-        /*Nav Click Scroll To Name*/
-        function ScrollToAbout() {
-            var toAbout = document.getElementById("about-start");
-            toAbout.scrollIntoView();
-        }
-
-        function ScrollToPortfolio() {
-            var toPortfolio = document.getElementById("portfolio-start");
-            toPortfolio.scrollIntoView();
-        }
-
-        function ScrollToContact() {
-            var toContact = document.getElementById("contact-start");
-            toContact.scrollIntoView();
-        }
-
-        /*Back To Top Button*/
-        var mybutton = document.getElementById("myBtn");
-
-        window.onscroll = function() {
-            scrollFunction()
-        };
-
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                mybutton.style.display = "block";
-            } else {
-                mybutton.style.display = "none";
-            }
-        }
-
-        function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
-
-        /*Portfolio section*/
-
-        var CssBut = document.getElementById("CssBut");
-        var Css = document.getElementById("Css");
-
-        function showCss() {
-            if (Css.style.display == "none") {
-                Css.style.display = "block";
-                CssBut.style.backgroundColor = "rgba(255, 255, 255, 0.2)";
-                CssBut.style.backgroundImage = "linear-gradient(350deg, #f907fc 0%, #05d6d9 74%)";
-            } else {
-                Css.style.display = "none";
-                CssBut.style.backgroundColor = "rgba(255, 255, 255, 0)";
-                CssBut.style.backgroundImage = "none";
-            }
-        }
-
-        var JsBut = document.getElementById("JsBut");
-        var Js = document.getElementById("Js");
-
-        function showJs() {
-            if (Js.style.display == "none") {
-                Js.style.display = "block";
-                JsBut.style.backgroundColor = "rgba(255, 255, 255, 0.2)";
-                JsBut.style.backgroundImage = "linear-gradient(350deg, #f907fc 0%, #05d6d9 74%)";
-            } else {
-                Js.style.display = "none";
-                JsBut.style.backgroundColor = "rgba(255, 255, 255, 0)";
-                JsBut.style.backgroundImage = "none";
-
-            }
-        }
-
-        var AnBut = document.getElementById("AnBut");
-        var Ag = document.getElementById("Angular");
-
-        function showAngular() {
-            if (Ag.style.display == "none") {
-                Ag.style.display = "block";
-                AnBut.style.backgroundColor = "#f907fc";
-                AnBut.style.backgroundImage = "linear-gradient(350deg, #f907fc 0%, #05d6d9 74%)";
-            } else {
-                Ag.style.display = "none";
-                AnBut.style.backgroundColor = "rgba(255, 255, 255, 0)";
-                AnBut.style.backgroundImage = "none";
-
-            }
-
-        }
-
-        /*Button selected*/
-        const element1 = document.getElementById('CssBut')
-        element1.addEventListener("click", () => {
-            Js.style.display = "none";
-            JsBut.style.backgroundColor = "rgba(255, 255, 255, 0)";
-            JsBut.style.backgroundImage = "none";
-            Ag.style.display = "none";
-            AnBut.style.backgroundColor = "rgba(255, 255, 255, 0)";
-            AnBut.style.backgroundImage = "none";
-        });
-        const element2 = document.getElementById('JsBut')
-        element2.addEventListener("click", () => {
-            Ag.style.display = "none";
-            AnBut.style.backgroundColor = "rgba(255, 255, 255, 0)";
-            AnBut.style.backgroundImage = "none";
-
-            Css.style.display = "none";
-            CssBut.style.backgroundColor = "rgba(255, 255, 255, 0)";
-            CssBut.style.backgroundImage = "none";
-
-        });
-        const element3 = document.getElementById('AnBut')
-        element3.addEventListener("click", () => {
-            Js.style.display = "none";
-            JsBut.style.backgroundColor = "rgba(255, 255, 255, 0)";
-            JsBut.style.backgroundImage = "none";
-            Css.style.display = "none";
-            CssBut.style.backgroundColor = "rgba(255, 255, 255, 0)";
-            CssBut.style.backgroundImage = "none";
-
-        });
-
-        function openGame() {
-            window.open("./Games/index.html", "_self")
-        }
-    </script>
-
-    <!--Extra Security-->
-    <script>
-        // disable right click
-        document.addEventListener('contextmenu', event => event.preventDefault());
-
-        document.onkeydown = function(e) {
-
-            // disable F12 key
-            if (e.keyCode == 123) {
-                return false;
-            }
-
-            // disable I key
-            if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
-                return false;
-            }
-
-            // disable J key
-            if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
-                return false;
-            }
-
-            // disable U key
-            if (e.ctrlKey && e.keyCode == 85) {
-                return false;
-            }
-        }
-    </script>
-    <!--Email contact script-->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function() {
-            emailjs.init("user_7VWazXfq5MXqce2crQLfw");
-        })();
-    </script>
-    <script>
-        window.onload = function() {
-            document.getElementById('contact-form').addEventListener('submit', function(event) {
-                event.preventDefault();
-                if (document.getElementById("userEmail").value.length == 0) {
-                    alert("Please fill areas to contact me!");
-                } else {
-                    emailjs.sendForm('service_lfsjdaz', 'template_9mj2g1d', this)
-                        .then(function() {
-                            console.log('SUCCESS!');
-                            alert("Please fill areas to contact me!");
-                        }, function(error) {
-                            console.log('FAILED...', error);
-                        });
-
-                }
-            });
-        }
-    </script>
 </body>
 
 </html>

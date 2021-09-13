@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palkka</title>
+</head>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    form {
+        width: 35%;
+        border: 1px solid black;
+        padding: 1rem;
+    }
+    
+    label {
+        margin: 1rem;
+    }
+    
+    input {
+        margin: 1rem;
+    }
+</style>
+
+<body>
+    <h1>Palkka</h1>
+
+    <form>
+        <label>Bruttopalkka: </label>
+        <input type="text" id="brutto" size="5"> <br>
+        <label>Veroprosentti: </label>
+        <input type="text" id="vero" size="4"> <br>
+        <input type="button" value="Laske palkka" onclick="laskePalkka()">
+        <div id="vastaus1"></div>
+        <div id="vastaus2"></div>
+        <div id="vastaus3"></div>
+        <div id="vastaus4"></div>
+    </form>
+
+
+    <script>
+        function laskePalkka() {
+            var brutto = document.getElementById("brutto").value;
+            var vero = document.getElementById("vero").value;
+            var veronOsuus = brutto * vero / 100.0;
+
+            document.getElementById("vastaus1").innerHTML = "<p> Veron osuus: " + veronOsuus.toFixed(2) + "€ </p>";
+
+            var eläkeOsuus = brutto * 0.0675;
+            document.getElementById("vastaus2").innerHTML = "<p> Työeläkevakuutusmaksun osuus: " + eläkeOsuus.toFixed(2) + "€ </p>";
+
+            var työtönOsuus = brutto * 0.015;
+            document.getElementById("vastaus3").innerHTML = "<p> Työttömyysvakuutuksen osuus: " + työtönOsuus.toFixed(2) + "€ </p>";
+
+            var käteenJää = brutto - veronOsuus - eläkeOsuus - työtönOsuus;
+            document.getElementById("vastaus4").innerHTML = "<p> Käteen jää: " + käteenJää.toFixed(2) + "€ </p>";
+
+
+        }
+    </script>
+</body>
+
+</html>

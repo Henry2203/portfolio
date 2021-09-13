@@ -1,0 +1,203 @@
+/*Portfolio START*/
+
+.dropPort {
+    min-height: 100%;
+    width: 100%;
+}
+
+.dropPort div {
+    color: #fff;
+    max-width: 200px;
+    margin: auto;
+}
+
+.dropPort p {
+    color: #fff;
+    font-size: 20px;
+    margin: 40px 0 20px 0;
+    text-align: center;
+}
+
+#portfolio {
+    padding: 90px 0 90px 0;
+    background-color: #2f2f2f;
+}
+
+#portfolio-title {
+    color: #fff;
+    font-size: 24px;
+    margin: 0 0 40px 0;
+    text-align: center;
+}
+
+.showButton {
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 5px;
+    border: solid white 1px;
+    padding: 5px 8px;
+    color: #fff;
+}
+
+.showButton:hover {
+    background-color: rgba(255, 255, 255, 0.137) !important;
+    border: solid #fff 1px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.activePortBut {
+    background-color: rgba(255, 255, 255, 0.2);
+    background-image: linear-gradient(350deg, #f907fc 0%, #05d6d9 74%);
+}
+
+#Css li,
+#Js li,
+#Angular li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+#Css li a,
+#Js li a,
+#Angular li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+#Css li a:hover,
+#Js li a:hover,
+#Angular li a:hover {
+    color: #05d6d9;
+    text-decoration: none;
+}
+
+.parent-grid-container {
+    display: grid;
+    grid-template-areas: 'css Js Angular game';
+    max-width: 50% !important;
+    margin: auto !important;
+    grid-gap: 20px;
+}
+
+.parent-grid-container button {
+    font-size: 16px;
+}
+
+@media (max-width: 1450px) {
+    .parent-grid-container {
+        display: grid;
+        grid-template-areas: 'css Js' 'Angular game';
+        max-width: 50% !important;
+        margin: auto !important;
+        grid-gap: 20px;
+    }
+}
+
+@media (max-width: 846px) {
+    .parent-grid-container {
+        display: grid;
+        grid-template-areas: 'css Js' 'Angular game';
+        max-width: 70% !important;
+        margin: auto !important;
+        grid-gap: 20px;
+    }
+}
+
+@media (max-width: 604px) {
+    .parent-grid-container {
+        display: grid;
+        grid-template-areas: 'css Js' 'Angular game';
+        max-width: 90% !important;
+        margin: auto !important;
+        grid-gap: 20px;
+    }
+}
+
+@media (max-width: 470px) {
+    .parent-grid-container {
+        display: grid;
+        grid-template-areas: 'css ''Js' 'Angular'' game';
+        max-width: 90% !important;
+        margin: auto !important;
+        grid-gap: 20px;
+    }
+}
+
+#compWeb li,
+#Js2 li,
+#Blender li,
+#Print li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+#compWeb li a,
+#Js2 li a,
+#Blender li a,
+#Print li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+#compWeb li a:hover,
+#Js2 li a:hover,
+#Blender li a:hover,
+#Print li a:hover {
+    color: #05d6d9;
+    text-decoration: none;
+}
+
+.parent-grid-container2 {
+    display: grid;
+    grid-template-areas: 'compWeb Js2 Blender Printing';
+    max-width: 50% !important;
+    margin: auto !important;
+    grid-gap: 20px;
+}
+
+.parent-grid-container2 button {
+    font-size: 16px;
+}
+
+@media (max-width: 1450px) {
+    .parent-grid-container2 {
+        display: grid;
+        grid-template-areas: 'compWeb Js2' 'Blender Printing';
+        max-width: 50% !important;
+        margin: auto !important;
+        grid-gap: 20px;
+    }
+}
+
+@media (max-width: 846px) {
+    .parent-grid-container2 {
+        display: grid;
+        grid-template-areas: 'compWeb Js2' 'Blender Printing';
+        max-width: 70% !important;
+        margin: auto !important;
+        grid-gap: 20px;
+    }
+}
+
+@media (max-width: 604px) {
+    .parent-grid-container2 {
+        display: grid;
+        grid-template-areas: 'compWeb Js2' 'Blender Printing';
+        max-width: 90% !important;
+        margin: auto !important;
+        grid-gap: 20px;
+    }
+}
+
+@media (max-width: 470px) {
+    .parent-grid-container2 {
+        display: grid;
+        grid-template-areas: 'compWeb ''Js2' 'Blender''Printing';
+        max-width: 90% !important;
+        margin: auto !important;
+        grid-gap: 20px;
+    }
+}
+
+
+/*Portfolio END*/

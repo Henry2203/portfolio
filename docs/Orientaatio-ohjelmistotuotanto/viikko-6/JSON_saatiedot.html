@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: black;
+            color: #00a00b;
+            font-family: courier;
+        }
+        
+        #vastaus {
+            color: #00a00b;
+            margin: 20px;
+        }
+        
+        form div {
+            font-family: "Courier";
+            white-space: nowrap;
+            overflow: hidden;
+            font-size: 20px;
+        }
+        
+        form div:nth-child(1) {
+            width: 50%;
+            opacity: 0;
+            -webkit-animation: type2 2s steps(40, end);
+            animation: type2 2s steps(40, end);
+            -webkit-animation-delay: 2s;
+            animation-delay: 0s;
+            -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+        }
+        
+        @keyframes type2 {
+            0% {
+                width: 0;
+            }
+            1% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 1;
+                border: none;
+            }
+        }
+        
+        @-webkit-keyframes type2 {
+            0% {
+                width: 0;
+            }
+            1% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 1;
+                border: none;
+            }
+        }
+        
+        @keyframes blink {
+            100% {
+                border-color: transparent;
+            }
+        }
+        
+        @-webkit-keyframes blink {
+            100% {
+                border-color: transparent;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Helsinki</h1>
+    <form>
+        <div id="vastaus"></div>
+    </form>
+    <script>
+        fetch('https://api.openweathermap.org/data/2.5/weather?lang=fi&q=helsinki&units=metric&appid=5f29fea206f59e8a0ef135a1ae579907')
+
+        .then(function(response) {
+                return response.json();
+            })
+            .then(function(responseJson) {
+                document.getElementById("vastaus").innerHTML = "<p>" + responseJson.weather[0].description + "<br> " + "Lämpötila: " + responseJson.main.temp + "°C" + "<br> " + "Tuuli: " + responseJson.wind.speed + " m/s" + "<br> " + "Pilvisyys: " + responseJson.clouds.all + "%" + "</p>";
+            })
+    </script>
+</body>
+
+</html>

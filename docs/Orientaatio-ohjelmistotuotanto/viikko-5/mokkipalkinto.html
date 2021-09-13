@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(22, 40, 58);
+            color: white;
+        }
+        
+        body * {
+            margin: 5px;
+            justify-content: center;
+            text-align: center;
+        }
+        
+        #vastaus {
+            letter-spacing: 1px;
+        }
+        
+        #voittaja {
+            color: lawngreen;
+        }
+    </style>
+    </style>
+</head>
+
+<body>
+    <h1>Palkkion arvonta</h1>
+    <form>
+        <label for="text">Nimi:</label>
+        <input type="text" id="nimi" size="10">
+        <input type="button" value="Lisää" onclick="lisaa()">
+        <input type="button" value="Arvo" onclick="arvo()">
+        <div id="vastaus"></div>
+        <div id="voittaja"></div>
+    </form>
+    <script>
+        var nimet = [];
+
+        function lisaa() {
+            var paikka = nimet.length;
+
+            nimet[paikka] = document.getElementById('nimi').value;
+
+            document.getElementById("nimi").value = "";
+
+            for (var i = 0; i <= paikka; i++) {
+
+                var teksti = nimet;
+            }
+
+            var vastaus = "Annetut nimet: " + teksti;
+
+            document.getElementById('vastaus').innerHTML = vastaus;
+        }
+
+
+
+        function arvo() {
+
+            var voittajaNimi = nimet[(Math.random() * nimet.length) | 0];
+
+            var voittaja = "Voittaja on " + voittajaNimi;
+
+            document.getElementById('voittaja').innerHTML = voittaja.toUpperCase();
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tehtävä 2</title>
+    <style>
+        body {
+            background-color: #403B38;
+            color: #FFE018;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 0 !important;
+        }
+        
+        input {
+            background-color: #241C15;
+            color: #FFE018;
+            padding: 5px 10px;
+            border-radius: 5px 10px;
+            border: 1px #FFE018 solid;
+            margin: 10px 10px 10px 0;
+        }
+        
+        form {
+            margin: 10px;
+        }
+        
+        section {
+            text-align: center;
+        }
+        
+        #vastaus {
+            margin-top: 10px;
+            max-width: 260px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <section>
+            <label>Maton leveys: </label>
+            <input type="text" id="leveys" size="5">
+            <label> metriä</label>
+        </section>
+        <section>
+            <label>Maton pituus: </label>
+            <input type="text" id="pituus" size="5">
+            <label> metriä</label> <br>
+        </section>
+        <section>
+            <input type="button" value="Laske" onclick="laske()">
+        </section>
+        <div id="vastaus"></div>
+    </form>
+    <script>
+        function laske() {
+            var leveys = document.getElementById("leveys").value;
+            var pituus = document.getElementById("pituus").value;
+            var hinta = 0;
+            var neliometri = 0;
+
+            var teksti = "Maton pesu maksaa " + laskeHinta(leveys, pituus).toFixed(2) + " €" + "<br>" + valmistusaika(leveys);
+
+            document.getElementById("vastaus").innerHTML = teksti;
+
+        }
+
+        function laskeHinta(leveys, pituus) {
+            neliometri = pituus * leveys;
+            hinta = neliometri * 5.30;
+            return hinta;
+        }
+
+        function valmistusaika(leveys) {
+
+            if (leveys >= 1) {
+                var minutesToAdd = 30;
+                var currentDate = new Date();
+                var futureDate = new Date(currentDate.getTime() + minutesToAdd * 60000);
+
+                var Aika = "ja pesu valmistuu " + futureDate.toLocaleTimeString('fi-FI');
+
+                return Aika;
+            } else {
+
+                var puuttuu = "Maton mitat puuttuu";
+                return puuttuu;
+
+            }
+        }
+    </script>
+</body>
+
+</html>

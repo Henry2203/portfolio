@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(46, 46, 46);
+            color: white;
+        }
+        
+        body * {
+            margin: 5px;
+        }
+        
+        #sulut {
+            color: rgb(93, 93, 93);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Pelifirman tuoton laskuri</h1>
+    <label for="">Kierrokset:</label>
+    <input type="text" size="7" id="määrä">
+    <input type="button" value="Pelaa" onclick="Pelaa()"> <br>
+    <label id="sulut" for="">(1 kierros = 1€)</label>
+    <div id="vastaus"></div>
+    <script>
+        function Pelaa() {
+            määrä = document.getElementById("määrä").value;
+            var voitot = 0;
+            for (var i = 1; i <= määrä; i++) {
+                var noppa = Math.round((Math.random() * 5) + 1);
+
+                if (noppa == 1 || noppa == 3 || noppa == 5) {
+
+                    var voitto = voitto + 0;
+
+                } else if (noppa == 2 || noppa == 4) {
+
+                    var voitto = 1.25 * 1;
+                    voitot = voitot + voitto;
+
+                } else {
+                    var voitto = 1.5 * 1;
+                    voitot = voitot + voitto;
+
+                }
+            };
+
+            var tulos = määrä - voitot;
+
+            Kaikki = "<p>Panokset oli " + määrä + "<br>" + "Maksetut voitot oli " +
+                voitot.toFixed(2) + " <br>" + "Tulos oli " + tulos.toFixed(2) + "</p>";
+
+            document.getElementById("vastaus").innerHTML = "<p>" + Kaikki + "</p>";
+        }
+    </script>
+</body>
+
+</html>

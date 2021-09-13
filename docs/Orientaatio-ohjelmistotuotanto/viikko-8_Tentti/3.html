@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tehtävä 3</title>
+    <style>
+        body {
+            background-color: #403B38;
+            color: #FFE018;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 0 !important;
+        }
+        
+        input {
+            background-color: #241C15;
+            color: #FFE018;
+            padding: 5px 10px;
+            border-radius: 5px 10px;
+            border: 1px #FFE018 solid;
+            margin: 10px 10px 10px 0;
+        }
+        
+        input[type="button" i] {
+            border-radius: 5px 10px;
+            border: 1px #FFE018 solid;
+        }
+        
+        form {
+            margin: 10px;
+        }
+        
+        section {
+            text-align: center;
+        }
+        
+        #vastaus {
+            max-width: 220px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <section>
+            <input type="button" value="Listaa" onclick="listaa()">
+            <input type="button" value="Voittaja" onclick="voittaja()">
+        </section>
+        <section id="kirjota">
+            <label>Nimi: </label>
+            <input type="text" id="nimi" size="20">
+            <input type="button" value="Hae" onclick="laske()">
+        </section>
+    </form>
+
+    <div id="vastaus"></div>
+
+    <script>
+        var pelaajat = [{
+            nimi: "Maija Majava",
+            laani: 0,
+            pitaja: 5,
+            tila: 4,
+            kirous: 0
+        }, {
+            nimi: "Liisa Laaksonen",
+            laani: 2,
+            pitaja: 7,
+            tila: 3,
+            kirous: 2
+        }, {
+            nimi: "Leena Leinonen",
+            laani: 5,
+            pitaja: 2,
+            tila: 3,
+            kirous: 5
+        }, {
+            nimi: "Miina Mäkinen",
+            laani: 2,
+            pitaja: 4,
+            tila: 6,
+            kirous: 0
+        }, ];
+
+
+        function listaa() {
+            var yhteensä = 0;
+            var teksti = "";
+            var Laani = 8;
+            var Pitaja = 5;
+            var Tila = 2
+            var Kirous = -1;
+
+            for (var i = 0; i < pelaajat.length; i++) {
+                teksti = teksti + "<p>Nimi: " + pelaajat[i].nimi + "<br>";
+                teksti = teksti + "Lääni: " + pelaajat[i].laani + "<br>";
+                teksti = teksti + "Pitäjä: " + pelaajat[i].pitaja + "<br>";
+                teksti = teksti + "Tila: " + pelaajat[i].tila + "<br>";
+                teksti = teksti + "Kirous: " + pelaajat[i].kirous + "<br>";
+
+                yhteensä = (pelaajat[i].laani * Laani);
+                yhteensä = yhteensä + (pelaajat[i].pitaja * Pitaja);
+                yhteensä = yhteensä + (pelaajat[i].tila * Tila);
+                yhteensä = yhteensä + (pelaajat[i].kirous * Kirous);
+
+                teksti = teksti + "YHTEENSÄ: " + yhteensä + " pistettä" + "<br>";
+            }
+
+            document.getElementById("vastaus").innerHTML = teksti;
+        }
+
+        function voittaja() {
+            var yhteensä = 0;
+            var teksti = "";
+            var Laani = 8;
+            var Pitaja = 5;
+            var Tila = 2
+            var Kirous = -1;
+
+            for (var i = 0; i < pelaajat.length; i++) {
+                teksti = teksti + "<p>Nimi " + pelaajat[i].nimi + "<br>";
+                yhteensä = (pelaajat[i].laani * Laani);
+                yhteensä = yhteensä + (pelaajat[i].pitaja * Pitaja);
+                yhteensä = yhteensä + (pelaajat[i].tila * Tila);
+                yhteensä = yhteensä + (pelaajat[i].kirous * Kirous);
+
+                teksti = teksti + "YHTEENSÄ " + yhteensä + " pistettä" + "<br>";
+            }
+
+            document.getElementById("vastaus").innerHTML = teksti;
+        }
+
+        function laske() {
+            var yhteensä = 0;
+            var Laani = 8;
+            var Pitaja = 5;
+            var Tila = 2
+            var Kirous = -1;
+            var eiPelaajaa = "Nimi puuttuu";
+            var nimi = document.getElementById('nimi').value;
+
+            if (nimi == "") {
+                document.getElementById('vastaus').innerHTML = eiPelaajaa;
+
+            } else {
+                document.getElementById('nimi').value;
+                let pattern = new RegExp(this.nimi.value, 'i');
+                let tulokset = pelaajat
+                    .filter((pelaaja) => pelaaja.nimi.match(pattern))
+                    .map(
+                        (pelaaja) =>
+                        `<P>Nimi: ${pelaaja.nimi} <br> Lääni: ${pelaaja.laani} <br> Pitäjä: ${pelaaja.pitaja} <br> Tila: ${pelaaja.tila} <br> Kirous: ${pelaaja.kirous}  <br> YHTEENSÄ:  </P>`
+                    )
+                    .join('-----------');
+                document.getElementById('vastaus').innerHTML = tulokset;
+
+            }
+        }
+    </script>
+</body>
+
+</html>
+</body>
+
+</html>
