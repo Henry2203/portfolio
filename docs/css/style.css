@@ -401,18 +401,18 @@ header a:hover {
 }
 
 .wave-top {
-    background-image: url(/images/wave-top.jpg);
+    background-image: url(../images/wave-top.jpg);
     height: 100px;
 }
 
 .wave-middle-bottom {
-    background-image: url(/images/wave-middle.jpg);
+    background-image: url(../images/wave-middle.jpg);
     transform: rotate( 180deg);
     height: 100px;
 }
 
 .wave-middle-top {
-    background-image: url(/images/wave-middle.jpg);
+    background-image: url(../images/wave-middle.jpg);
     height: 100px;
 }
 
